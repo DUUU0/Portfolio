@@ -1,0 +1,53 @@
+header {
+  background-color: var(--background-header);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 60px;
+  width: 100%;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.social-media {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 20px;
+}
+
+.social-media a {
+  color: var(--blue);
+  transition: color .2s ease;
+}
+
+.social-media a:hover {
+  color: #fff;
+}
+
+@media (max-width: 620px) {
+  .name {
+    font-size: 2.3rem;
+  }
+
+  .social-media {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 470px) {
+  header {
+    padding: 17px 30px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .social-media {
+    font-size: 1.1rem;
+  }
+}

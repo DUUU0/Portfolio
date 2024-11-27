@@ -1,0 +1,211 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  text-align: justify;
+}
+
+.content {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.text h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.text p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.techs {
+  margin-top: 40px;
+}
+
+.techs h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.line-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.line-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.tech {
+  background-color: #fff;
+  padding: 14px;
+  border-radius: 5px;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+}
+
+.tech:hover {
+  box-shadow: 0px 0px 6px var(--blue);
+}
+
+.tech img {
+  width: 100px;
+  height: 100px;
+}
+
+.image {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  border: 1px solid var(--blue);
+}
+
+.image img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 6px var(--blue);
+}
+
+@media (max-width: 1220px) {
+  .line-1 {
+    gap: 50px;
+  }
+
+  .line-2 {
+    gap: 50px;
+  }
+
+  .tech img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 1px solid var(--blue);
+  }
+}
+
+@media (max-width: 860px) {
+  .line-1 {
+    gap: 50px;
+  }
+
+  .line-2 {
+    gap: 50px;
+  }
+
+  .tech img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 1px solid var(--blue);
+  }
+}
+
+@media (max-width: 780px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .image {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .image p {
+    font-size: 0.8rem;
+  }
+
+  .text h2 {
+    font-size: 1.6rem;
+  }
+
+  .techs h2 {
+    font-size: 1.6rem;
+  }
+
+  .text p {
+    font-size: 1rem;
+  }
+
+  .tech img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 390px) {
+  .image p {
+    font-size: 0.7rem;
+  }
+
+  .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .techs h2 {
+    font-size: 1.5rem;
+  }
+
+  .text p {
+    font-size: 0.9rem;
+  }
+
+  .tech img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .image img {
+    width: 150px;
+    height: 150px;
+  }
+}
