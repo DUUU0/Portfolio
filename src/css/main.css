@@ -59,6 +59,7 @@ main {
   border-radius: 5px;
   border: 2px solid var(--blue);
   cursor: pointer;
+  transition: box-shadow .2s ease-in-out;
 }
 
 .tech:hover {
@@ -84,6 +85,7 @@ main {
   height: 400px;
   border-radius: 100%;
   border: 1px solid var(--blue);
+  transition: box-shadow .2s ease-in-out;
 }
 
 .image img:hover {
